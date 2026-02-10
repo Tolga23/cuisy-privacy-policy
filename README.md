@@ -54,6 +54,7 @@ We process content you create or upload, including:
 - PDF cookbooks uploaded for indexing/search
 - Meal photos and fridge photos uploaded for AI analysis
 - Source metadata (for example source URL and citation/page references)
+- PDF cookbook indexing and search are user-scoped: each user can search only their own uploaded books
 
 ### 3.3 Kitchen Management Data
 - Fridge items (name, category, quantity, unit, expiration, low stock, notes)
@@ -137,6 +138,10 @@ When you use AI features, we process only the content needed to serve your reque
 
 AI outputs may include structured recipes, ingredient lists, and search responses with citations.
 
+For PDF cookbook features, retrieval scope is private by design:
+- Your indexed cookbook content is linked to your account
+- Other users cannot search or access your uploaded books through in-app cookbook search
+
 Do not upload content you are not allowed to process. You are responsible for having the rights to content you submit.
 
 ---
@@ -175,6 +180,7 @@ We may disclose data:
 - In merger/acquisition scenarios with proper notice where legally required
 
 We do not share personal data with third parties for cross-context behavioral advertising.
+We do not make user-uploaded cookbook libraries publicly searchable inside Cuisy.
 
 ---
 
