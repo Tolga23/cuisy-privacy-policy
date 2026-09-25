@@ -486,8 +486,7 @@
         </div>
       </div>
       <nav class="top-links">
-        <a class="pill-link" href="./terms-of-service.html">Terms of Service</a>
-        <a class="pill-link" href="./index.html">Support</a>
+        <a class="pill-link" href="./support.html">Support</a>
         <a class="pill-link" href="mailto:tolgadev23@gmail.com">Contact</a>
       </nav>
     </header>
@@ -496,11 +495,11 @@
       <span class="kicker">Privacy Policy</span>
       <h2>Your data, your control.</h2>
       <p>
-        This policy explains how Cuisy collects, uses, stores, and protects data across free offline-first usage and optional premium cloud sync.
+        This policy explains how Cuisy collects, uses, stores, and protects data across free offline-first usage and premium cross-device features.
       </p>
       <div class="hero-meta">
-        <span class="meta-pill">Last Updated: February 10, 2026</span>
-        <span class="meta-pill">Effective Date: February 10, 2026</span>
+        <span class="meta-pill">Last Updated: September 25, 2026</span>
+        <span class="meta-pill">Effective Date: September 25, 2026</span>
         <span class="meta-pill">Bundle ID: com.hardal.cuisy</span>
       </div>
     </section>
@@ -515,7 +514,7 @@
           <li><a href="#s4">Permissions We Request</a></li>
           <li><a href="#s5">How We Use Data</a></li>
           <li><a href="#s6">Free vs Premium Processing</a></li>
-          <li><a href="#s7">AI Processing</a></li>
+          <li><a href="#s7">AI and Voice Processing</a></li>
           <li><a href="#s8">Third-Party Services</a></li>
           <li><a href="#s9">Data Retention</a></li>
           <li><a href="#s10">Deletion and Export</a></li>
@@ -584,13 +583,16 @@
           <ul>
             <li>Device model, OS version, app version</li>
             <li>Push notification token</li>
-            <li>Usage events, quota counters, capture job logs, and diagnostics</li>
+            <li>Request metadata used for security and service operation, such as IP address, request path, request ID, and timestamps</li>
+            <li>Quota, rate-limit, cache, and capture-job status needed to operate requested features</li>
+            <li>Platform/store diagnostics may be available under your device settings; Cuisy has no app-integrated analytics SDK</li>
+            <li>Crash and error reports sent to Sentry (EU data region) when the app crashes, freezes, or hits an unexpected error: error type and stack trace, app version and build, device model and OS version, the screen in use with a short trail of recent technical events (screen changes, taps, request paths, and status codes), and a random per-install identifier. Reports exclude your account, email, recipe content, and IP address, are not linked to your account, and are deleted automatically within 90 days</li>
           </ul>
           <h5>3.7 Data We Do Not Intentionally Collect</h5>
           <ul>
             <li>Precise GPS location</li>
             <li>Contacts, call logs, or SMS</li>
-            <li>Microphone recordings for core functionality</li>
+            <li>Stored voice audio or transcripts (Cook Mode voice commands are matched in memory; see Section 7)</li>
           </ul>
         </section>
 
@@ -600,6 +602,7 @@
           <ul>
             <li>Camera and Photos: meal photo capture, fridge scan, profile image</li>
             <li>Files and Documents: selecting PDF cookbooks</li>
+            <li>Microphone and Speech Recognition (optional): Cook Mode push-to-talk voice commands, requested the first time you use them</li>
             <li>Notifications (optional): capture/job/account notifications</li>
           </ul>
           <p>If permission is denied, some features may be limited while core local features remain available.</p>
@@ -614,27 +617,27 @@
             <li>Quota and subscription entitlement enforcement</li>
             <li>Optional premium cloud sync across devices</li>
             <li>Requested notifications and support responses</li>
-            <li>Abuse prevention, diagnostics, and legal compliance</li>
+            <li>Abuse prevention, crash and error diagnostics, and legal compliance</li>
           </ul>
           <div class="callout">Cuisy does not sell personal data.</div>
         </section>
 
         <section class="policy" id="s6">
           <h4>6. Free Tier vs Premium Tier Processing</h4>
-          <h5>Free Tier (Offline-First)</h5>
+          <h5>Offline-First Design</h5>
           <ul>
-            <li>Primary storage is local on-device SQLite</li>
-            <li>Core functionality works without cloud sync</li>
+            <li>Core recipe-library, fridge, matching, and shopping-list data is stored locally in SQLite and remains available offline</li>
+            <li>Capture, AI, authentication validation, notifications, and cross-device features require network services</li>
           </ul>
-          <h5>Premium Tier (Optional Cloud Sync)</h5>
+          <h5>Premium Backend Mirror</h5>
           <ul>
-            <li>Data is mirrored to backend services for cross-device usage</li>
-            <li>Sync is asynchronous and designed not to block app interaction</li>
+            <li>For premium features, selected recipe, fridge, and shopping data may be mirrored to the Cuisy backend for cross-device access</li>
+            <li>SQLite remains the on-device source of truth, and backend mirroring is asynchronous</li>
           </ul>
         </section>
 
         <section class="policy" id="s7">
-          <h4>7. AI Processing</h4>
+          <h4>7. AI and Voice Processing</h4>
           <p>When AI features are used, Cuisy processes data needed to fulfill the request:</p>
           <ul>
             <li>Video URL parsing</li>
@@ -643,45 +646,66 @@
             <li>Recipe suggestion and ingredient matching</li>
           </ul>
           <p>AI output may include structured recipes, ingredient lists, and citation-based responses.</p>
+          <p>Provider retention, training, and deletion are governed by the applicable provider terms; Cuisy does not claim an unverified fixed retention period.</p>
           <h5>Private PDF Retrieval Scope</h5>
           <ul>
             <li>Indexed cookbook data is linked to the uploading account</li>
             <li>Other users cannot search or access your uploaded books in-app</li>
           </ul>
           <p>You are responsible for having rights to content you upload.</p>
+          <h5>Voice Commands (Cook Mode)</h5>
+          <ul>
+            <li>Cook Mode voice control is push-to-talk: the microphone listens only while you hold the mic button, and microphone permission is requested only the first time you use it</li>
+            <li>Where your device supports it, speech is recognized on-device; otherwise audio is processed by your device's speech service (Apple or Google), which the app discloses before asking for permission</li>
+            <li>Cuisy does not store, log, or send voice audio or transcripts to the Cuisy backend; the recognized phrase is matched to a cooking command in memory</li>
+            <li>If a platform speech service is used, its processing and retention follow your device settings and that provider's terms</li>
+          </ul>
         </section>
 
         <section class="policy" id="s8">
           <h4>8. Third-Party Services and Data Sharing</h4>
           <p>Data is shared with processors only for service operation.</p>
-          <h5>8.1 Authentication</h5>
+          <h5>8.1 Hosting and Infrastructure</h5>
+          <ul>
+            <li>Railway (API, database, cache, and image hosting): <a href="https://railway.com/legal/privacy" target="_blank" rel="noopener noreferrer">railway.com/legal/privacy</a></li>
+          </ul>
+          <h5>8.2 Authentication</h5>
           <ul>
             <li>Google Sign-In: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
             <li>Apple Sign-In: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">apple.com/legal/privacy</a></li>
           </ul>
-          <h5>8.2 AI Providers</h5>
+          <h5>8.3 AI Providers</h5>
           <ul>
             <li>OpenAI: <a href="https://openai.com/privacy" target="_blank" rel="noopener noreferrer">openai.com/privacy</a></li>
-            <li>Google (Gemini): <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
+            <li>Google Gemini: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
           </ul>
-          <h5>8.3 Subscription and Billing</h5>
+          <h5>8.4 Speech Recognition (Cook Mode)</h5>
+          <ul>
+            <li>Apple speech services, when on-device recognition is unavailable: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">apple.com/legal/privacy</a></li>
+            <li>Google speech services, when on-device recognition is unavailable: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
+          </ul>
+          <h5>8.5 Subscription and Billing</h5>
           <ul>
             <li>RevenueCat: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">revenuecat.com/privacy</a></li>
             <li>Apple App Store billing: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">apple.com/legal/privacy</a></li>
             <li>Google Play billing: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
           </ul>
-          <h5>8.4 Notifications and Messaging</h5>
+          <h5>8.6 Notifications</h5>
           <ul>
-            <li>Expo Notifications: <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">expo.dev/privacy</a></li>
+            <li>Expo Push Service: <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">expo.dev/privacy</a></li>
             <li>Firebase Cloud Messaging: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a></li>
           </ul>
-          <h5>8.5 Source Platforms</h5>
+          <h5>8.7 Source Platforms</h5>
           <ul>
             <li>YouTube: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
             <li>TikTok: <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">tiktok.com/legal/privacy-policy</a></li>
             <li>Instagram/Meta: <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer">facebook.com/privacy/policy</a></li>
           </ul>
-          <h5>8.6 Legal and Corporate Transfers</h5>
+          <h5>8.8 Crash and Error Diagnostics</h5>
+          <ul>
+            <li>Sentry (EU data region): <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">sentry.io/privacy</a></li>
+          </ul>
+          <h5>8.9 Legal and Corporate Transfers</h5>
           <ul>
             <li>Disclosure may occur when required by law or legal process</li>
             <li>Disclosure may occur to protect rights, safety, and security</li>
@@ -696,12 +720,13 @@
             <li>On-device data: retained until deleted by user, account deletion, or uninstall</li>
             <li>Premium synced data: retained while account remains active</li>
             <li>Operational logs: retained only as needed for service, fraud prevention, security, and legal obligations</li>
+            <li>Crash and error reports: deleted automatically by Sentry within 90 days</li>
           </ul>
           <p>After account deletion request:</p>
           <ul>
-            <li>Removal from active systems without undue delay</li>
-            <li>Target completion within 30 days</li>
-            <li>Residual encrypted backups overwritten on a rolling schedule</li>
+            <li>Cuisy backend account records and owner-scoped local app data are removed without undue delay</li>
+            <li>Records held by external processors (for example AI providers, RevenueCat, or Sentry) follow those processors' own retention and deletion processes</li>
+            <li>Cuisy does not promise an unverified fixed deletion period for provider-held records</li>
           </ul>
           <p>If law requires longer retention, only minimum necessary data is retained.</p>
         </section>
@@ -713,12 +738,15 @@
           <h5>10.2 Out-of-App Deletion Request</h5>
           <p>If app access is not available, send request to <a href="mailto:tolgadev23@gmail.com">tolgadev23@gmail.com</a> from your registered address.</p>
           <h5>10.3 Data Export</h5>
-          <p>Data export and account-data access requests are supported via in-app flows and support channels, subject to identity verification.</p>
+          <p>The app can download the account, recipe, fridge, and shopping data currently held by the Cuisy backend in JSON format. Local-only settings and files are not included. Other access requests are handled through support, subject to identity verification.</p>
+          <h5>10.4 Crash and Error Reports</h5>
+          <p>Crash and error reports are not linked to your account, so they cannot be looked up, exported, or deleted per account. They are deleted automatically within 90 days.</p>
         </section>
 
         <section class="policy" id="s11">
           <h4>11. International Data Transfers</h4>
           <p>Data may be processed in countries other than your own depending on infrastructure and region.</p>
+          <p>Crash and error reports are stored by Sentry in its EU data region.</p>
           <p>Where required, lawful transfer mechanisms and reasonable technical safeguards are applied.</p>
         </section>
 
@@ -736,7 +764,7 @@
 
         <section class="policy" id="s13">
           <h4>13. Children's Privacy</h4>
-          <p>Cuisy is not directed to children under 13, or higher minimum age where required by local law.</p>
+          <p>Cuisy is not intended for users under 13 years of age (16 in the EU), or a higher minimum age where required by local law.</p>
           <p>If you believe child data was submitted, contact <a href="mailto:tolgadev23@gmail.com">tolgadev23@gmail.com</a> for investigation and required deletion.</p>
         </section>
 
@@ -749,6 +777,7 @@
             <li>Restriction or objection to certain processing</li>
             <li>Withdrawal of consent for consent-based processing</li>
             <li>Non-discrimination for exercising rights</li>
+            <li>Platform controls: manage permissions (camera, photos, microphone, notifications) and OS/store diagnostics in device and store settings</li>
           </ul>
           <p>Rights requests can be sent to <a href="mailto:tolgadev23@gmail.com">tolgadev23@gmail.com</a>. Identity verification may be required.</p>
         </section>
@@ -761,7 +790,7 @@
             <li>Contact info</li>
             <li>User content</li>
             <li>Identifiers</li>
-            <li>App activity and diagnostics</li>
+            <li>App activity, crash data, and diagnostics</li>
             <li>Purchases/subscription metadata (not card numbers)</li>
           </ul>
           <h5>Data handling principles</h5>
@@ -813,10 +842,9 @@
     </div>
 
     <footer class="foot" data-reveal="3">
-      <span>Last updated: February 10, 2026</span>
+      <span>Last updated: September 25, 2026</span>
       <span class="links">
-        <a href="./terms-of-service.html">Terms of Service</a>
-        <a href="./index.html">Support</a>
+        <a href="./support.html">Support</a>
         <a href="mailto:tolgadev23@gmail.com">Contact</a>
       </span>
     </footer>
