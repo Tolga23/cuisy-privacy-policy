@@ -40,8 +40,9 @@ does not reproduce the deployed site.
 - Images are hosted locally; the website loads no third-party scripts,
   fonts, analytics, or embeds.
 - Support uses the shared design and a native, JavaScript-free FAQ.
-- Cuisy is described as an independent product by Tolga Hardal, without an
-  invented registered company, founding year, funding, or usage metrics.
+- About and marketing content focus on Cuisy's purpose, features, and product
+  direction. Do not add personal creator profiles, names, or Person author
+  metadata, or invent a registered company, founding year, funding, or metrics.
 - Contact routing: support@getcuisy.com for app/account help,
   hello@getcuisy.com for general enquiries and collaboration, and
   privacy@getcuisy.com for privacy, data access/export, and account deletion.
