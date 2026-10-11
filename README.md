@@ -42,18 +42,25 @@ does not reproduce the deployed site.
 - Support uses the shared design and a native, JavaScript-free FAQ.
 - Cuisy is described as an independent product by Tolga Hardal, without an
   invented registered company, founding year, funding, or usage metrics.
-- Contact email: tolga@getcuisy.com (provided by the founder). This includes
-  support, privacy, and account deletion requests.
+- Contact routing: support@getcuisy.com for app/account help,
+  hello@getcuisy.com for general enquiries and collaboration, and
+  privacy@getcuisy.com for privacy, data access/export, and account deletion.
 - The AI page distinguishes released features from the planned Claude API
   integration. It does not claim a live integration, Anthropic endorsement,
   partnership, or acceptance into a startup program. Update the site and
   privacy disclosures to match actual processing before a provider change.
-- The product roadmap at /ai/#product-roadmap labels meal planning and
-  calorie/macro tracking as Planned, and coordinated shopping and leftover
+- The product roadmap at /ai/#product-roadmap labels meal planning,
+  calorie/macro tracking, and country-specific grocery connections as Planned,
+  and coordinated shopping and leftover
   suggestions as Exploring. None are claimed as released or given dates.
   Nutrition totals are planned around food-composition data and editable
   portions; Claude is proposed for recipe interpretation and meal suggestions.
-- Legal document wording is retained apart from the updated contact address.
+- Grocery connections describe a future transfer to a retailer list or cart,
+  with product review before checkout. Countries and retailers remain to be
+  confirmed; no integrations, retailer partnerships, or universal coverage
+  are claimed. The app's src/i18n/config.ts defines 10 language locales,
+  not 10 supported countries; do not infer country coverage from languages.
+- Legal terms and retention rules are retained; contact routing is updated.
 - Google Play is the active download destination. iOS is marked “coming soon”
   because App Store Connect showed version 1.0.1 waiting for review when checked
   on October 11, 2026. Once publicly available, verify the App Store URL for
