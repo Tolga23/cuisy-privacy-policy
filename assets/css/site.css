@@ -157,10 +157,11 @@ li + li { margin-top: .5rem; }
 .story-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 5rem; align-items: start; }
 .story-copy h2 { margin-bottom: 1.5rem; }
 .story-copy p { color: var(--muted); }
-.founder-card { border: 1px solid var(--line); border-radius: var(--radius); padding: 2.5rem; background: white; }
-.monogram { display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; background: var(--sage); color: var(--green); font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem; }
-.founder-card p { color: var(--muted); margin-top: .75rem; font-size: .95rem; }
-.founder-card .text-link { margin-top: 1.5rem; overflow-wrap: anywhere; }
+.product-card { border: 1px solid var(--line); border-radius: var(--radius); padding: 2.5rem; background: white; }
+.product-card h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.product-mark { width: 68px; height: 68px; border-radius: 18px; margin-bottom: 1.5rem; }
+.product-card p { color: var(--muted); margin-top: .75rem; font-size: .95rem; }
+.product-card .text-link { margin-top: 1.5rem; overflow-wrap: anywhere; }
 .mission { padding: 3rem; background: var(--sage); border-radius: var(--radius); }
 .mission h2 { max-width: 800px; }
 .mission p { margin-top: 1.5rem; max-width: 740px; color: var(--muted); }
@@ -270,7 +271,7 @@ li + li { margin-top: .5rem; }
   .tour-copy { order: -1; }
   .tour-image { padding: 0; }
   .tour-image img { width: min(100%, 255px); }
-  .feature-card, .mission, .roadmap, .founder-card, .support-contact { padding: 1.5rem; }
+  .feature-card, .mission, .roadmap, .product-card, .support-contact { padding: 1.5rem; }
   .feature-card h3 { font-size: 1.7rem; }
   .feature-row, .plans { grid-template-columns: 1fr; gap: 1.5rem; }
   .feature-row { padding-block: 2.5rem; }
