@@ -122,6 +122,7 @@ li + li { margin-top: .5rem; }
 .ai-notes h3 { margin-top: 1rem; font-size: 1.7rem; }
 .ai-notes p { color: #cbd9cc; font-size: .95rem; margin-top: 1rem; }
 .ai-notes .pill { background: #dcebd2; }
+.ai-notes .text-link { margin-top: 1.5rem; color: white; }
 .download { margin-block: 5rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 3rem; background: var(--green); color: white; padding: 4rem; border-radius: var(--radius); }
 .download .eyebrow { color: var(--mint); }
 .download p { color: #cbd9cc; margin-top: 1.25rem; }
@@ -170,6 +171,18 @@ li + li { margin-top: .5rem; }
 .roadmap .pill { background: white; white-space: nowrap; color: #8e3e24; }
 .roadmap .principles article { border-color: #d8c6b6; }
 .roadmap .fine-print { border-top: 1px solid #d8c6b6; padding-top: 1.5rem; margin-top: 2rem; }
+.product-roadmap { padding-top: 0; }
+.roadmap-intro { max-width: 850px; margin-bottom: 2rem; color: var(--muted); }
+.roadmap-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.roadmap-card { padding: 2rem; border: 1px solid var(--line); border-radius: 18px; background: white; }
+.roadmap-card-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.roadmap-number { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.roadmap-card h3 { font-size: 1.6rem; }
+.roadmap-card p { color: var(--muted); margin-top: 1rem; font-size: .95rem; }
+.roadmap-card .roadmap-outcome { color: var(--green); font-weight: 600; font-size: .85rem; }
+.pill-exploring { background: var(--peach); color: #8e3e24; }
+.development-focus { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #d8c6b6; }
+.development-focus p { color: var(--muted); margin-top: .75rem; font-size: .95rem; max-width: 850px; }
 .capabilities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .capability { padding: 2rem; border: 1px solid var(--line); border-radius: 18px; background: white; }
 .capability h3 { margin-top: 1.5rem; }
@@ -231,6 +244,7 @@ li + li { margin-top: .5rem; }
   .footer-bottom { flex-direction: column; }
   .roadmap-title { display: block; }
   .roadmap-title .pill { margin-top: 1rem; }
+  .product-roadmap { padding-top: 0; }
   .support-layout { padding-bottom: 4rem; }
 }
 @media (max-width: 560px) {
@@ -263,6 +277,8 @@ li + li { margin-top: .5rem; }
   .feature-row .feature-copy { order: -1 !important; }
   .feature-row figure { padding: 1.5rem; }
   .plan { padding: 1.5rem; }
+  .roadmap-grid { grid-template-columns: 1fr; }
+  .roadmap-card { padding: 1.5rem; }
   .download { grid-template-columns: 1fr; padding: 2rem; margin-block: 3.5rem; }
   .download-actions { align-items: start; text-align: left; }
   .download-actions img { display: none; }
