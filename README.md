@@ -48,6 +48,11 @@ does not reproduce the deployed site.
   integration. It does not claim a live integration, Anthropic endorsement,
   partnership, or acceptance into a startup program. Update the site and
   privacy disclosures to match actual processing before a provider change.
+- The product roadmap at /ai/#product-roadmap labels meal planning and
+  calorie/macro tracking as Planned, and coordinated shopping and leftover
+  suggestions as Exploring. None are claimed as released or given dates.
+  Nutrition totals are planned around food-composition data and editable
+  portions; Claude is proposed for recipe interpretation and meal suggestions.
 - Legal document wording is retained apart from the updated contact address.
 - Google Play is the active download destination. iOS is marked “coming soon”
   because App Store Connect showed version 1.0.1 waiting for review when checked
