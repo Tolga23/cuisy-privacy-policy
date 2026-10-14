@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://getcuisy.com/</loc></url>
-  <url><loc>https://getcuisy.com/features/</loc></url>
-  <url><loc>https://getcuisy.com/ai/</loc></url>
-  <url><loc>https://getcuisy.com/about/</loc></url>
-  <url><loc>https://getcuisy.com/support/</loc></url>
-  <url><loc>https://getcuisy.com/privacy-policy.html</loc></url>
-  <url><loc>https://getcuisy.com/terms-of-service.html</loc></url>
-  <url><loc>https://getcuisy.com/delete-account.html</loc></url>
+  <url><loc>https://getcuisy.com/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/video-to-recipe/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/save-recipes-from-tiktok-instagram-youtube/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/recipe-keeper-app/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/features/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/ai/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/about/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/support/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/privacy-policy.html</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://getcuisy.com/terms-of-service.html</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://getcuisy.com/delete-account.html</loc><lastmod>2026-10-11</lastmod></url>
 </urlset>

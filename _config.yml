@@ -1,0 +1,7 @@
+# GitHub Pages builds this site with Jekyll. Every page is plain HTML without
+# front matter, so Jekyll copies it unchanged; this file only keeps internal
+# repository files off https://getcuisy.com (dotfiles are excluded by default)
+# and turns off the default theme, which would add an unused stylesheet.
+theme: null
+exclude:
+  - README.md
