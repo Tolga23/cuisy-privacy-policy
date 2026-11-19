@@ -1,4 +1,6 @@
-// A progressive enhancement: every walkthrough step is visible without JavaScript.
+// Progressive enhancements only: every page works without JavaScript.
+
+// Product tour: without JavaScript every step stays visible, one after another.
 for (const tour of document.querySelectorAll('[data-tour]')) {
   const tablist = tour.querySelector('[data-tour-tabs]');
   const tabs = [...tablist.querySelectorAll('button')];
@@ -34,4 +36,22 @@ for (const tour of document.querySelectorAll('[data-tour]')) {
   });
   selectTab(0);
   tablist.hidden = false;
+}
+
+// Mobile menu: a native <details> disclosure. Close it after a link is chosen,
+// on Escape, or when the visitor clicks elsewhere on the page.
+for (const menu of document.querySelectorAll('.mobile-menu')) {
+  const summary = menu.querySelector('summary');
+  menu.addEventListener('click', event => {
+    if (event.target.closest('a')) menu.open = false;
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.open) {
+      menu.open = false;
+      summary.focus();
+    }
+  });
+  document.addEventListener('click', event => {
+    if (menu.open && !menu.contains(event.target)) menu.open = false;
+  });
 }
