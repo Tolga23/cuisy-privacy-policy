@@ -40,25 +40,38 @@ does not reproduce the deployed site.
 
 ## Content and assets
 
-- Shared marketing styles: assets/css/site.css.
-- Product tour: assets/js/site.js. Keyboard-accessible tabs use arrow keys,
-  Home, and End. Every step remains visible when JavaScript is disabled.
-- Images: assets/images/. The icon and four promotional screenshots are
-  Cuisy's existing artwork from its official Google Play listing:
-  https://play.google.com/store/apps/details?id=com.hardal.cuisy
-- Screenshots are lossy WebP (quality 80) at 640 px, with 360 px and 540 px
-  variants (`-360.webp`, `-540.webp`) for `srcset`. Keep the 640 px file name
-  unchanged; structured data links to it. og-cuisy.jpg (1200x630) is the
-  social preview image; cuisy-icon-144.png is the in-page and favicon mark.
-- Store badges: badges/google-play-badge.png is Google's official badge from
-  play.google.com with its transparent padding trimmed. Pages showing it carry
-  the Google trademark line in the footer. Play links use the referrer
-  `utm_source=getcuisy&utm_medium=website&utm_campaign=<page>`.
-- iOS: download blocks show “Coming soon on the App Store” as plain text and
-  the home page JSON-LD lists Android only. When the App Store listing is live,
-  follow the `iOS`/`TODO(iOS)` comments: swap in Apple's official badge and add
-  the App Store offer. Every marketing page already has the Smart App Banner
-  meta tag (app-id=6758858246).
+- Shared styles for every page, legal pages included: assets/css/site.css.
+  Colours, radii and spacing are CSS custom properties at the top of the
+  file. Large orange text uses `--accent` (#e2643a); small orange text uses
+  `--accent-text` (#b84a25) so it keeps 4.5:1 contrast on white and on the
+  beige `--canvas` background.
+- Fonts: Inter 4 (SIL Open Font License 1.1, https://github.com/rsms/inter),
+  self-hosted from assets/fonts/ as Latin subsets in four weights
+  (400, 500, 600, 700). Headlines use Inter Bold with tight letter-spacing.
+- Header: the desktop navigation is hidden below 900 px and replaced by a
+  native `<details>` menu, so it works without JavaScript.
+- assets/js/site.js: the product tour on the home page (keyboard-accessible
+  tabs with arrow keys, Home and End; every step stays visible without
+  JavaScript) and closing the mobile menu after a link, on Escape or on an
+  outside click.
+- Images: assets/images/. screens/ holds Cuisy app screens (WebP, 600 px
+  wide, plus a `-360.webp` variant for `srcset`); the home page JSON-LD
+  links to the 600 px files. brand/ holds the wordmark (cuisy-logo.webp) and
+  Pufi, the mascot (pufi.webp, pufi-300.webp). Screens show sample recipes.
+  og-cuisy.jpg (1200x630) is the social preview image; cuisy-icon-144.png is
+  the favicon.
+- Store badges: badges/app-store-badge.svg is Apple's official black
+  “Download on the App Store” badge (US-UK English) from
+  toolbox.marketingtools.apple.com, and badges/google-play-badge.png is
+  Google's official badge from play.google.com with its transparent padding
+  trimmed. Download blocks show both at the same height, App Store first. The
+  footer carries the Apple and Google trademark lines.
+- Store links: the App Store link is the region-neutral
+  https://apps.apple.com/app/cuisy-video-to-recipe-saver/id6758858246, so
+  visitors land in their own country's store. Play links use the referrer
+  `utm_source=getcuisy&utm_medium=website&utm_campaign=<page>`. The home page
+  JSON-LD lists Android and iOS, with an offer for each store. Every
+  marketing page has the Smart App Banner meta tag (app-id=6758858246).
 - Images are hosted locally; the website loads no third-party scripts,
   fonts, analytics, or embeds.
 - Support uses the shared design and a native, JavaScript-free FAQ.
@@ -84,10 +97,14 @@ does not reproduce the deployed site.
   are claimed. The app's src/i18n/config.ts defines 10 language locales,
   not 10 supported countries; do not infer country coverage from languages.
 - Legal terms and retention rules are retained; contact routing is updated.
-- Google Play is the active download destination. iOS is marked “coming soon”
-  because App Store Connect showed version 1.0.1 waiting for review when checked
-  on October 11, 2026. Once publicly available, verify the App Store URL for
-  app ID 6758858246 and update the download blocks across the site.
+  The privacy policy, terms and account deletion pages use the shared header,
+  footer and stylesheet (`.legal-*` classes); edit their wording only on
+  purpose, since store listings link to them.
+- The home page mentions the roadmap once, under the plans, labelled
+  “Planned · not yet released”. Keep any future-feature copy labelled the same
+  way.
+- Cuisy is live on the App Store (iPhone) and Google Play (Android); the
+  App Store listing was confirmed live on November 19, 2026.
 - Free/Premium descriptions were checked against the public Google Play
   listing. Recheck them when product limits or availability change.
 

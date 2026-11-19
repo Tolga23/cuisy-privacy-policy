@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#173d30">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" href="/assets/images/cuisy-icon-144.png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 <script src="/assets/js/site.js" defer></script>
 <title>How to Save Recipes from TikTok, Instagram and YouTube | Cuisy</title>
@@ -22,12 +24,12 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cuisy app screens: a cooking video saved as a recipe, and fridge ingredients matched to recipes.">
+<meta property="og:image:alt" content="Cuisy: cooking videos in, recipes out. Three Cuisy app screens: a recipe made from a video, the kitchen ingredient picker and Cook Mode.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How to Save Recipes from TikTok, Instagram and YouTube | Cuisy">
 <meta name="twitter:description" content="A practical guide to saving recipes from TikTok, Instagram and YouTube: copy the link, turn the video into a written recipe, and keep it in one searchable library.">
 <meta name="twitter:image" content="https://getcuisy.com/assets/images/og-cuisy.jpg">
-<meta name="twitter:image:alt" content="Cuisy app screens: a cooking video saved as a recipe, and fridge ingredients matched to recipes.">
+<meta name="twitter:image:alt" content="Cuisy: cooking videos in, recipes out. Three Cuisy app screens: a recipe made from a video, the kitchen ingredient picker and Cook Mode.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,7 +64,7 @@
           "name": "Can I use Cuisy on iPhone?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cuisy is available on Android through Google Play today. The iPhone app is coming soon to the App Store."
+            "text": "Yes. Cuisy is available on iPhone from the App Store and on Android from Google Play."
           }
         },
         {
@@ -108,9 +110,15 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container header-inner">
-  <a class="brand" href="/" aria-label="Cuisy home"><img src="/assets/images/cuisy-icon-144.png" width="40" height="40" alt=""><span>cuisy<span class="brand-dot">.</span></span></a>
+  <a class="brand" href="/" aria-label="Cuisy home"><img src="/assets/images/brand/cuisy-logo.webp" width="320" height="143" alt=""></a>
   <nav class="site-nav" aria-label="Main navigation"><a href="/features/">Features</a><a href="/ai/">Our AI</a><a href="/about/">About</a><a href="/support/">Support</a></nav>
-  <a class="button button-small header-download" href="#download">Get Cuisy <span aria-hidden="true">↗</span></a>
+  <div class="header-actions">
+    <a class="button button-small" href="#download">Get the app</a>
+    <details class="mobile-menu">
+      <summary aria-label="Menu"><svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></summary>
+      <nav aria-label="Mobile navigation"><a href="/">Home</a><a href="/features/">Features</a><a href="/ai/">Our AI</a><a href="/about/">About</a><a href="/support/">Support</a></nav>
+    </details>
+  </div>
 </div></header>
 <main id="main">
 
@@ -128,7 +136,7 @@
   <section class="section" id="steps" aria-labelledby="steps-title">
     <div class="section-heading"><div><span class="eyebrow">Step by step</span><h2 id="steps-title">From your feed<br>to your recipe library.</h2></div><p>You’ll need Cuisy on your phone and an internet connection for the import.</p></div>
     <ol class="steps">
-      <li><h3>Install Cuisy</h3><p><a href="https://play.google.com/store/apps/details?id=com.hardal.cuisy&amp;referrer=utm_source%3Dgetcuisy%26utm_medium%3Dwebsite%26utm_campaign%3Dsave-recipes-guide">Get Cuisy free on Google Play</a>. The iPhone app is coming soon to the App Store.</p></li>
+      <li><h3>Install Cuisy</h3><p>Get Cuisy free on the <a href="https://apps.apple.com/app/cuisy-video-to-recipe-saver/id6758858246">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.hardal.cuisy&amp;referrer=utm_source%3Dgetcuisy%26utm_medium%3Dwebsite%26utm_campaign%3Dsave-recipes-guide">Google Play</a>.</p></li>
       <li><h3>Copy the link to the video</h3><p>Open the video, tap its Share button and choose Copy link.</p><ul class="check-list"><li><strong>TikTok:</strong> tap Share on the video, then Copy link.</li><li><strong>Instagram:</strong> on the Reel or post, tap the share icon, then Copy link.</li><li><strong>YouTube:</strong> tap Share under the video or on the Short, then Copy link.</li></ul><p>If Cuisy appears in your phone’s share menu, you can share the video to Cuisy directly instead.</p></li>
       <li><h3>Paste it into Cuisy</h3><p>In Cuisy, tap the chef button in the middle of the tab bar and choose Video. Paste the link (if you just copied it, Cuisy can paste it for you) and tap Extract.</p></li>
       <li><h3>Review the recipe</h3><p>Cuisy writes out the ingredients with amounts and the steps in order, using what’s said in the video, text on screen and the caption. Compare it with the video, because AI can misread a quantity or miss a step.</p></li>
@@ -136,8 +144,8 @@
     </ol>
   </section>
   <section class="feature-row" aria-labelledby="organize-title">
-    <figure><img src="/assets/images/fridge-matching.webp" srcset="/assets/images/fridge-matching-360.webp 360w, /assets/images/fridge-matching-540.webp 540w, /assets/images/fridge-matching.webp 640w" sizes="270px" width="640" height="1138" alt="Ingredients selected in Cuisy to find matching saved recipes." loading="lazy" decoding="async"></figure>
-    <div class="feature-copy"><span class="eyebrow">After you save</span><h2 id="organize-title">Keep it findable.<br>Make it tonight.</h2><p>Recipes from every app end up in one library on your device, ready when you are.</p><ul class="check-list"><li>Search your library by recipe name or ingredient.</li><li>See which saved recipes match the ingredients in your fridge.</li><li>Add what’s missing to your shopping list.</li><li>Open saved recipes offline, right in the kitchen.</li></ul><a class="text-link" href="/recipe-keeper-app/">Cuisy as a recipe keeper <span aria-hidden="true">↗</span></a></div>
+    <figure class="feature-visual"><div class="phone"><img src="/assets/images/screens/recipe-library.webp" srcset="/assets/images/screens/recipe-library-360.webp 360w, /assets/images/screens/recipe-library.webp 600w" sizes="(max-width: 600px) 213px, 243px" width="600" height="1304" alt="The Cuisy recipe library, showing which saved recipes are ready to cook and which need shopping." loading="lazy" decoding="async"></div></figure>
+    <div class="feature-copy"><span class="eyebrow">After you save</span><h2 id="organize-title">Keep it findable.<br>Make it tonight.</h2><p>Recipes from every app end up in one library on your device, ready when you are.</p><ul class="check-list"><li>Search your library by recipe name or ingredient.</li><li>See which saved recipes match the ingredients in your fridge.</li><li>Add what’s missing to your shopping list.</li><li>Open saved recipes offline, right in the kitchen.</li></ul><a class="text-link" href="/recipe-keeper-app/">Cuisy as a recipe keeper <span aria-hidden="true">→</span></a></div>
   </section>
   <section class="section" aria-labelledby="tips-title">
     <div class="section-heading"><div><span class="eyebrow">Tips</span><h2 id="tips-title">For better imports.</h2></div></div>
@@ -149,25 +157,31 @@
   </section>
   <section class="section faq" aria-labelledby="faq-title"><h2 id="faq-title">Saving recipe videos: questions.</h2>
     <details><summary>Do I need a TikTok, Instagram or YouTube account?</summary><p>Cuisy doesn’t ask you to sign in to TikTok, Instagram or YouTube. You only need the link to a public video.</p></details>
-    <details><summary>Can I use Cuisy on iPhone?</summary><p>Cuisy is available on Android through Google Play today. The iPhone app is coming soon to the App Store.</p></details>
+    <details><summary>Can I use Cuisy on iPhone?</summary><p>Yes. Cuisy is available on iPhone from the App Store and on Android from Google Play.</p></details>
     <details><summary>Can I open my saved recipes offline?</summary><p>Yes. Saved recipes, your fridge and your shopping list work offline. Importing a new video needs an internet connection.</p></details>
     <details><summary>What does Premium add?</summary><p>Premium adds a higher video import allowance, PDF cookbook imports with private AI search, AI recipe ideas, camera ingredient scans and cross-device sync. Plans and prices are shown in the app.</p></details>
   </section>
-  <section class="contact-banner" aria-labelledby="next-title"><div><h2 id="next-title">What does Cuisy write down?</h2><p>See exactly what you get when a cooking video becomes a recipe.</p></div><a class="button button-outline" href="/video-to-recipe/">Video to recipe <span aria-hidden="true">↗</span></a></section>
+  <section class="contact-banner" aria-labelledby="next-title"><div><h2 id="next-title">What does Cuisy write down?</h2><p>See exactly what you get when a cooking video becomes a recipe.</p></div><a class="button button-outline" href="/video-to-recipe/">Video to recipe <span aria-hidden="true">→</span></a></section>
 </div>
-<section class="download container" id="download" aria-labelledby="download-title">
-  <div><span class="eyebrow">Your next good meal starts here</span><h2 id="download-title">Save the recipe.<br>Make the moment.</h2><p>Bring a little more possibility to your kitchen.</p></div>
-  <div class="download-actions"><img src="/assets/images/cuisy-icon-144.png" width="72" height="72" alt="" loading="lazy"><div class="store-row"><a class="store-badge" href="https://play.google.com/store/apps/details?id=com.hardal.cuisy&amp;referrer=utm_source%3Dgetcuisy%26utm_medium%3Dwebsite%26utm_campaign%3Dsave-recipes-guide"><img src="/assets/images/badges/google-play-badge.png" width="564" height="168" alt="Get it on Google Play" loading="lazy"></a><!-- iOS: when https://apps.apple.com/app/id6758858246 is live, replace this label with the official App Store badge linking there. --><span class="store-soon">Coming soon on the <strong>App Store</strong></span></div><small>Free to start · In-app purchases</small></div>
-</section>
+<section class="cta" id="download" aria-labelledby="download-title"><div class="container"><div class="cta-inner">
+  <div class="cta-copy">
+    <h2 id="download-title">Your next dinner is already in your saved videos.</h2>
+    <p>Get Cuisy free on the App Store and Google Play.</p>
+    <div class="store-row"><a class="store-badge" href="https://apps.apple.com/app/cuisy-video-to-recipe-saver/id6758858246"><img src="/assets/images/badges/app-store-badge.svg" width="120" height="40" alt="Download on the App Store" loading="lazy"></a><a class="store-badge" href="https://play.google.com/store/apps/details?id=com.hardal.cuisy&amp;referrer=utm_source%3Dgetcuisy%26utm_medium%3Dwebsite%26utm_campaign%3Dsave-recipes-guide"><img src="/assets/images/badges/google-play-badge.png" width="564" height="168" alt="Get it on Google Play" loading="lazy"></a></div>
+    <p class="cta-note">Free to start · In-app purchases</p>
+  </div>
+  <img class="cta-pufi" src="/assets/images/brand/pufi.webp" srcset="/assets/images/brand/pufi-300.webp 300w, /assets/images/brand/pufi.webp 600w" sizes="(max-width: 600px) 160px, (max-width: 900px) 200px, 300px" width="600" height="600" alt="Pufi, the Cuisy mascot" loading="lazy" decoding="async">
+</div></div></section>
 </main>
 <footer class="site-footer"><div class="container">
-  <div class="footer-grid"><div class="footer-brand"><a class="brand" href="/" aria-label="Cuisy home"><img src="/assets/images/cuisy-icon-144.png" width="40" height="40" alt=""><span>cuisy<span class="brand-dot">.</span></span></a><p>A little inspiration.<br>A lot of homemade.</p><a class="contact-link" href="mailto:hello@getcuisy.com">hello@getcuisy.com <span aria-hidden="true">↗</span></a></div>
-  <div><h2>Explore</h2><a href="/features/">Features</a><a href="/ai/">Our AI</a><a href="/about/">About Cuisy</a></div>
-  <div><h2>Guides</h2><a href="/video-to-recipe/">Video to recipe</a><a href="/save-recipes-from-tiktok-instagram-youtube/">Save recipes from TikTok, Instagram &amp; YouTube</a><a href="/recipe-keeper-app/">Recipe keeper app</a></div>
-  <div><h2>Here to help</h2><a href="/support/">Support</a><a href="/delete-account.html">Delete account</a><a href="mailto:support@getcuisy.com">Email support</a></div>
-  <div><h2>The details</h2><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="mailto:privacy@getcuisy.com">Privacy requests</a></div></div>
-  <div class="footer-bottom"><span>© 2026 Cuisy.</span><span>Made for everyday cooking.</span></div>
-  <p class="footer-legal">Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  <div class="footer-grid">
+    <div class="footer-brand"><a class="brand" href="/" aria-label="Cuisy home"><img src="/assets/images/brand/cuisy-logo.webp" width="320" height="143" alt="" loading="lazy"></a><p>From saved to served. Recipes from your feed, ready for your kitchen.</p><a class="text-link" href="mailto:hello@getcuisy.com">hello@getcuisy.com</a></div>
+    <div class="footer-col"><h2>Product</h2><a href="/features/">Features</a><a href="/features/#plans">Plans</a><a href="/ai/">Our AI</a><a href="/about/">About Cuisy</a></div>
+    <div class="footer-col"><h2>Guides</h2><a href="/video-to-recipe/">Video to recipe</a><a href="/save-recipes-from-tiktok-instagram-youtube/">Save recipes from TikTok, Instagram &amp; YouTube</a><a href="/recipe-keeper-app/">Recipe keeper app</a></div>
+    <div class="footer-col"><h2>Help</h2><a href="/support/">Support</a><a href="/delete-account.html">Delete account</a><a href="mailto:support@getcuisy.com">Email support</a></div>
+    <div class="footer-col"><h2>Legal</h2><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="mailto:privacy@getcuisy.com">Privacy requests</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Cuisy</span><span>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</span></div>
 </div></footer>
 </body>
 </html>
